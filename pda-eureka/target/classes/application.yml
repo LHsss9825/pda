@@ -1,0 +1,10 @@
+server:
+  port: 8080
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: false #本注册中心不注册到其他注册中心，如有则为true
+    fetch-registry: false #注册中心之间是否相互拉取数据，如同有则为true
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/

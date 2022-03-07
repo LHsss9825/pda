@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>pda</artifactId>
+        <groupId>org.example</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <modelVersion>4.0.0</modelVersion>
+     <packaging>war</packaging>
+    <groupId>org.qf</groupId>
+    <artifactId>pda-Applyconsumer</artifactId>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency>
+        <dependency>
+            <artifactId>pda-common</artifactId>
+            <groupId>org.example</groupId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <!-- spring-boot-starter -->
+        <!-- spring-boot-starter-web -->
+        <!-- spring-boot-devtools -->
+        <!-- spring-boot-starter-test -->
+        <!-- tomcat-embed-jasper -->
+        <!-- mybatis-spring-boot-starter -->
+        <!-- druid-spring-boot-starter -->
+        <!-- pagehelper-spring-boot-starter -->
+
+        <!-- javax.servlet-api -->
+        <!-- spring-context -->
+        <!-- spring-aspects -->
+        <!-- spring-web -->
+        <!-- spring-webmvc -->
+        <!-- spring-jdbc -->
+        <!-- jackson-databind -->
+        <!-- hibernate-validator -->
+        <!-- taglibs-standard-impl -->
+        <!-- taglibs-standard-spec -->
+        <!-- mysql-connector-java -->
+        <!-- druid -->
+        <!-- mybatis -->
+        <!-- mybatis-spring -->
+        <!-- pagehelper -->
+        <!-- log4j -->
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+
+        <resources>
+            <resource>
+                <directory>src/main/java</directory>
+                <includes>
+                    <include>*.xml</include>
+                    <include>**/*.xml</include>
+                </includes>
+                <filtering>true</filtering>
+            </resource>
+
+            <resource>
+                <directory>src/main/resources</directory>
+                <includes>
+                    <include>*</include>
+                </includes>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
+    </build>
+</project>
