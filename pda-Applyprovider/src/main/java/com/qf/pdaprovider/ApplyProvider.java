@@ -11,7 +11,8 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 @EnableEurekaClient
 @SpringBootApplication
 public class ApplyProvider {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         SpringApplication.run(ApplyProvider.class,args);
+//        while (true){Thread.sleep(Integer.MAX_VALUE);}
     }
 }

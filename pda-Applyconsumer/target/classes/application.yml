@@ -7,3 +7,9 @@ eureka:
   client:
     service-url:
       defaultZone: http://root:root@localhost:8080/eureka/
+APPLYPROVIDER:      # 编写调用服务名称
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.WeightedResponseTimeRule
+feign:
+  hystrix:
+    enabled: true  #开启服务降级

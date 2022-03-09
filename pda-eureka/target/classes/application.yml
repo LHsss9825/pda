@@ -3,8 +3,17 @@ server:
 eureka:
   instance:
     hostname: localhost
+    lease-renewal-interval-in-seconds: 30      #心跳的间隔
+    lease-expiration-duration-in-seconds: 90    # 多久没发送，就认为你宕机了
   client:
-    register-with-eureka: false #本注册中心不注册到其他注册中心，如有则为true
-    fetch-registry: false #注册中心之间是否相互拉取数据，如同有则为true
+    register-with-eureka: false  #本注册中心不注册到其他注册中心，如有则为true
+    fetch-registry: false        #注册中心之间是否相互拉取数据，如同有则为true
     service-url:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+      server:
+        nable-self-preservation: true  # 开启自我保护机制
+spring:
+  security:
+    user:
+      name: root
+      password: root

@@ -27,7 +27,25 @@
             <groupId>org.example</groupId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
-        <!-- spring-boot-starter -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-ribbon</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-ribbon</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
+
+        </dependency>
+        <!-- spring-boot-st
+        arter -->
         <!-- spring-boot-starter-web -->
         <!-- spring-boot-devtools -->
         <!-- spring-boot-starter-test -->

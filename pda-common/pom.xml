@@ -11,6 +11,11 @@
     <artifactId>pda-common</artifactId>
     <packaging>jar</packaging>
     <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.22</version>
+        </dependency>
         <!-- spring-boot-starter -->
         <!-- spring-boot-starter-web -->
         <!-- spring-boot-devtools -->

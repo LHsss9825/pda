@@ -1,10 +1,16 @@
 package com.qf.pdaCommon;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 /**
  * @author ：lh
  * @date ：Created in 2022/3/7 16:11
  */
-
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class Apply {
     private String applyName;
     private String applyTime;
