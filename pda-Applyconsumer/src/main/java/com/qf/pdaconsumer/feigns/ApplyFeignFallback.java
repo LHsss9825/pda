@@ -30,4 +30,9 @@ public class ApplyFeignFallback  implements ApplyFeign{
         System.out.println("服务降级了："+list);
         return list;
     }
+
+    @Override
+    public List<Apply> findApply5(String applyName) {
+        return null;
+    }
 }

@@ -3,8 +3,14 @@
   <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$/pda-Applyconsumer/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/pda-Applyprovider/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pda-SaveApplyToMQ/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/pda-common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pda-config/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/pda-eureka/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pda-gatway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pda-getapplyfromqueue/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pda-getapplyfromqueue2/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pda-search/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />

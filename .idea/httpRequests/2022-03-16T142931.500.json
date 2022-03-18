@@ -1,0 +1,7 @@
+{
+  "timestamp": "2022-03-16T06:29:31.606+0000",
+  "status": 500,
+  "error": "Internal Server Error",
+  "message": "No message available",
+  "path": "/pmq/save"
+}

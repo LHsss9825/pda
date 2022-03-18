@@ -24,31 +24,6 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-security</artifactId>
         </dependency>
-        <!-- spring-boot-starter -->
-        <!-- spring-boot-starter-web -->
-        <!-- spring-boot-devtools -->
-        <!-- spring-boot-starter-test -->
-        <!-- tomcat-embed-jasper -->
-        <!-- mybatis-spring-boot-starter -->
-        <!-- druid-spring-boot-starter -->
-        <!-- pagehelper-spring-boot-starter -->
-
-        <!-- javax.servlet-api -->
-        <!-- spring-context -->
-        <!-- spring-aspects -->
-        <!-- spring-web -->
-        <!-- spring-webmvc -->
-        <!-- spring-jdbc -->
-        <!-- jackson-databind -->
-        <!-- hibernate-validator -->
-        <!-- taglibs-standard-impl -->
-        <!-- taglibs-standard-spec -->
-        <!-- mysql-connector-java -->
-        <!-- druid -->
-        <!-- mybatis -->
-        <!-- mybatis-spring -->
-        <!-- pagehelper -->
-        <!-- log4j -->
     </dependencies>
 
     <build>

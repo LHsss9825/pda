@@ -2,6 +2,7 @@ package com.qf.pdaconsumer;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.web.servlet.ServletComponentScan;
 import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
@@ -17,6 +18,7 @@ import org.springframework.web.client.RestTemplate;
 @EnableEurekaClient
 @SpringBootApplication
 @EnableCircuitBreaker //开启hystrix的使用
+@ServletComponentScan(basePackages = "com.qf.pdaconsumer.filter")
 public class ApplyConsumer {
     public static void main(String[] args) {
         SpringApplication.run(ApplyConsumer.class, args);

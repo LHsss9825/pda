@@ -8,16 +8,39 @@ import lombok.NoArgsConstructor;
  * @author ：lh
  * @date ：Created in 2022/3/7 16:11
  */
-@Data
-@AllArgsConstructor
-@NoArgsConstructor
+
 public class Apply {
     private String applyName;
     private String applyTime;
     private String inTime;
     private String type;
     private String unit;
+    private String types;
     private int num;
+    public Apply() {
+    }
+
+    public Apply(String applyName, String applyTime, String inTime, String type, String unit, int num) {
+        this.applyName = applyName;
+        this.applyTime = applyTime;
+        this.inTime = inTime;
+        this.type = type;
+        this.unit = unit;
+        this.num = num;
+        this.types=type;
+    }
+
+    @Override
+    public String toString() {
+        return "Apply{" +
+                "applyName='" + applyName + '\'' +
+                ", applyTime='" + applyTime + '\'' +
+                ", inTime='" + inTime + '\'' +
+                ", type='" + type + '\'' +
+                ", unit='" + unit + '\'' +
+                ", num=" + num +
+                '}';
+    }
 
     public String getApplyName() {
         return applyName;
@@ -65,5 +88,13 @@ public class Apply {
 
     public void setNum(int num) {
         this.num = num;
+    }
+
+    public String getTypes() {
+        return types;
+    }
+
+    public void setTypes(String types) {
+        this.types = types;
     }
 }

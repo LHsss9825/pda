@@ -16,31 +16,11 @@
             <artifactId>lombok</artifactId>
             <version>1.18.22</version>
         </dependency>
-        <!-- spring-boot-starter -->
-        <!-- spring-boot-starter-web -->
-        <!-- spring-boot-devtools -->
-        <!-- spring-boot-starter-test -->
-        <!-- tomcat-embed-jasper -->
-        <!-- mybatis-spring-boot-starter -->
-        <!-- druid-spring-boot-starter -->
-        <!-- pagehelper-spring-boot-starter -->
-
-        <!-- javax.servlet-api -->
-        <!-- spring-context -->
-        <!-- spring-aspects -->
-        <!-- spring-web -->
-        <!-- spring-webmvc -->
-        <!-- spring-jdbc -->
-        <!-- jackson-databind -->
-        <!-- hibernate-validator -->
-        <!-- taglibs-standard-impl -->
-        <!-- taglibs-standard-spec -->
-        <!-- mysql-connector-java -->
-        <!-- druid -->
-        <!-- mybatis -->
-        <!-- mybatis-spring -->
-        <!-- pagehelper -->
-        <!-- log4j -->
+        <dependency>
+            <groupId>com.rabbitmq</groupId>
+            <artifactId>amqp-client</artifactId>
+            <version>5.7.3</version>
+        </dependency>
     </dependencies>
 
     <build>

@@ -44,59 +44,12 @@
             <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
 
         </dependency>
-        <!-- spring-boot-st
-        arter -->
-        <!-- spring-boot-starter-web -->
-        <!-- spring-boot-devtools -->
-        <!-- spring-boot-starter-test -->
-        <!-- tomcat-embed-jasper -->
-        <!-- mybatis-spring-boot-starter -->
-        <!-- druid-spring-boot-starter -->
-        <!-- pagehelper-spring-boot-starter -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-config-client</artifactId>
+        </dependency>
 
-        <!-- javax.servlet-api -->
-        <!-- spring-context -->
-        <!-- spring-aspects -->
-        <!-- spring-web -->
-        <!-- spring-webmvc -->
-        <!-- spring-jdbc -->
-        <!-- jackson-databind -->
-        <!-- hibernate-validator -->
-        <!-- taglibs-standard-impl -->
-        <!-- taglibs-standard-spec -->
-        <!-- mysql-connector-java -->
-        <!-- druid -->
-        <!-- mybatis -->
-        <!-- mybatis-spring -->
-        <!-- pagehelper -->
-        <!-- log4j -->
     </dependencies>
 
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
 
-        <resources>
-            <resource>
-                <directory>src/main/java</directory>
-                <includes>
-                    <include>*.xml</include>
-                    <include>**/*.xml</include>
-                </includes>
-                <filtering>true</filtering>
-            </resource>
-
-            <resource>
-                <directory>src/main/resources</directory>
-                <includes>
-                    <include>*</include>
-                </includes>
-                <filtering>true</filtering>
-            </resource>
-        </resources>
-    </build>
 </project>

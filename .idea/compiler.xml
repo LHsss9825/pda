@@ -8,9 +8,15 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="pda-Applyprovider" />
+        <module name="pda-gatway" />
+        <module name="pda-config" />
+        <module name="pda-SaveApplyToMQ" />
+        <module name="pda-getapplyfromqueue" />
+        <module name="pda-Applyconsumer" />
+        <module name="pda-search" />
+        <module name="pda-getapplyfromqueue2" />
         <module name="pda-common" />
         <module name="pda-eureka" />
-        <module name="pda-Applyconsumer" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -22,8 +28,14 @@
       <module name="pad-com" options="-parameters" />
       <module name="pda-Applyconsumer" options="-parameters" />
       <module name="pda-Applyprovider" options="-parameters" />
+      <module name="pda-SaveApplyToMQ" options="-parameters" />
       <module name="pda-common" options="-parameters" />
+      <module name="pda-config" options="-parameters" />
       <module name="pda-eureka" options="-parameters" />
+      <module name="pda-gatway" options="-parameters" />
+      <module name="pda-getapplyfromqueue" options="-parameters" />
+      <module name="pda-getapplyfromqueue2" options="-parameters" />
+      <module name="pda-search" options="-parameters" />
     </option>
   </component>
 </project>

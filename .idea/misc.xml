@@ -5,6 +5,11 @@
     <file type="web" url="file://$PROJECT_DIR$/pda-Applyconsumer" />
     <file type="web" url="file://$PROJECT_DIR$/pda-Applyprovider" />
     <file type="web" url="file://$PROJECT_DIR$/pda-eureka" />
+    <file type="web" url="file://$PROJECT_DIR$/pda-gatway" />
+    <file type="web" url="file://$PROJECT_DIR$/pda-getapplyfromqueue" />
+    <file type="web" url="file://$PROJECT_DIR$/pda-getapplyfromqueue2" />
+    <file type="web" url="file://$PROJECT_DIR$/pda-SaveApplyToMQ" />
+    <file type="web" url="file://$PROJECT_DIR$/pda-search" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">

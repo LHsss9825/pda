@@ -1,10 +1,7 @@
 package com.qf.pdaconsumer.feigns;
 import com.qf.pdaCommon.Apply;
 import org.springframework.cloud.openfeign.FeignClient;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -14,7 +11,7 @@ import java.util.List;
  */
 //@FeignClient(value = "APPLYPROVIDER",fallback = ApplyFeignFallback.class) //被调用的服务的名字
 @FeignClient(value = "APPLYPROVIDER",fallbackFactory = ApplyFallbackFactory.class) //工厂方式
-
+//@FeignClient(value = "APPLYPROVIDER")
 public interface ApplyFeign {
     @RequestMapping(value = "/apply/find",method = RequestMethod.GET)
     List<Apply> findApply();
@@ -22,5 +19,6 @@ public interface ApplyFeign {
     String addApply(@RequestBody Apply apply);
     @RequestMapping(value="/apply/find4/{applyName}",method = RequestMethod.GET)
     List<Apply> findApply4(@PathVariable String applyName);
-
+    @RequestMapping(value = "/apply/find5",method = RequestMethod.GET)
+    List<Apply> findApply5(@RequestParam String applyName);
 }

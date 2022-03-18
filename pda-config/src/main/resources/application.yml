@@ -1,0 +1,13 @@
+server:
+  port: 8084
+spring:
+  application:
+
+  profiles:
+    active: native #本地
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: classpath:proper #配置本地
+

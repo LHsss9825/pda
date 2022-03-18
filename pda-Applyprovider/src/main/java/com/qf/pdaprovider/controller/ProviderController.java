@@ -14,6 +14,7 @@ import java.util.List;
 @RequestMapping("apply")
 public class ProviderController {
 
+
     @PostMapping("add")
     public String add(@RequestBody Apply apply) {
         System.out.println(apply);
@@ -23,13 +24,14 @@ public class ProviderController {
     @GetMapping("/find")
     public List<Apply> find() {
         List<Apply> list = new ArrayList<Apply>();
-
-
-        list.add(new Apply("aaa", "19970101", "2022/3/8", "nana", "sdaf", 9));
-        list.add(new Apply("bbb", "19970101", "2022/3/8", "nana", "sdaf", 19));
-        list.add(new Apply("ccc", "19970101", "2022/3/8", "nana", "sdaf", 29));
-        list.add(new Apply("ddd", "19970101", "2022/3/8", "nana", "sdaf", 39));
-        list.add(new Apply("eee", "19970101", "2022/3/8", "nana", "sdaf", 49));
+     Apply apply1= new Apply("aaa", "19970101", "2022/3/8", "nana", "sdaf", 9);
+     Apply apply2= new Apply("bbb", "19970101", "2022/3/8", "nana", "sdaf", 9);
+     Apply apply3= new Apply("ccc", "19970101", "2022/3/8", "nana", "sdaf", 9);
+     Apply apply4= new Apply("ddd", "19970101", "2022/3/8", "nana", "sdaf", 9);
+        list.add(apply1);
+        list.add(apply2);
+        list.add(apply3);
+        list.add(apply4);
         return list;
     }
 
@@ -59,6 +61,7 @@ public class ProviderController {
 
     @GetMapping("/find4/{applyName}")
     public List<Apply> find4(@PathVariable String applyName) {
+        System.out.println("调用了一次" + applyName);
         List<Apply> list = new ArrayList<Apply>();
         System.out.println("条件：" + applyName);
         list.add(new Apply("lh", "19970101", "2022/3/8", "nana", "ss", 9));
@@ -70,10 +73,10 @@ public class ProviderController {
 
     }
 
-    @GetMapping("find5")
-    public List<Apply> find5(@RequestParam String applyName, String addr) {
-        List<Apply> list = new ArrayList<Apply>();
-        System.out.println("条件：" + applyName);
+    @GetMapping("/find5")
+    public List<Apply> find5(@RequestParam String applyName) {
+        List<Apply> list = new ArrayList<>();
+        System.out.println("条件1：" + applyName);
         list.add(new Apply("lh", "19970101", "2022/3/8", "nana", "ss", 9));
         list.add(new Apply("zxc", "19970101", "2022/3/8", "nana", "ggg", 19));
         list.add(new Apply("ccc", "19970101", "2022/3/8", "nana", "ggg", 29));

@@ -1,0 +1,60 @@
+GET http://localhost:8087/search/create
+
+<> 2022-03-18T153915.200.txt
+
+###
+
+GET http://localhost:8085/pmq/save?name=kk
+Accept: application/json
+
+<> 2022-03-16T142931.500.json
+
+###
+
+GET http://localhost:8080
+Accept: application/json
+
+<> 2022-03-16T092637.401.json
+
+###
+
+GET http://localhost:8080
+Accept: application/json
+
+<> 2022-03-16T092609.401.json
+
+###
+
+GET http://localhost:8080
+Accept: application/json
+
+<> 2022-03-16T092546.401.json
+
+###
+
+GET http://localhost:80/api/item?id=99
+Accept: application/json
+
+###
+
+GET http://localhost:8085/pmq/save?name=lh
+Accept: application/json
+
+<> 2022-03-15T234216.200.json
+
+###
+
+GET http://localhost:8085/pmq/save4?s1=java333&s2=python6666
+Accept: application/json
+
+<> 2022-03-15T230157.200.json
+
+###
+
+GET http://localhost:8085/pmq/save4?s1=java333&s2=python6666
+Accept: application/json
+
+<> 2022-03-15T225840.200.json
+
+###
+
